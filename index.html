@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EBAC Shoes</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>EBAC Fancy Shoes</h1>
+        <nav>
+          <ul>
+            <li><a href="#sobre">Sobre a loja</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="sobre" class="sobre">
+      <div class="container">
+        <div class="sobreImg">
+          <img src="/img/loja.jpg" alt="Ebac Shoes" />
+        </div>
+        <div class="sobreTexto">
+          <h2>Sobre a Loja</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit. Commodi quos
+            amet mollitia ab perferendis, nostrum exercitationem optio
+            voluptate, dolorem assumenda iure iusto vitae nisi repudiandae
+            aliquam officiis voluptas, laborum perspiciatis?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos" class="produtos">
+      <div class="container">
+        <h2>Produtos</h2>
+
+        <div class="conteudoProdutos">
+          <div class="cardProduto">
+            <div
+              class="cardProdutoImg"
+              onmouseover="changeImage('img/sapato-1-1.webp', 'produto1')"
+              onmouseleave="resetImage('img/sapato-1.webp', 'produto1')"
+            >
+              <img
+                id="produto1"
+                src="img/sapato-1.webp"
+                alt="Derby Couro Trevira Richards"
+              />
+            </div>
+            <div class="cardProdutoInfo">
+              <h3>Derby Couro Trevira Richards</h3>
+              <p>
+                Confeccionado em couro pit stop, com acabamento escovado e
+                detalhe de costura topada no traseiro o Derby Trevira é classico
+                e sofisticado.
+              </p>
+              <p class="produtoPrice">R$ 1.839,00</p>
+
+              <button>Adicionar ao Carrinho</button>
+            </div>
+          </div>
+
+          <div class="cardProduto">
+            <div
+              class="cardProdutoImg"
+              onmouseover="changeImage('img/sapato-2-1.webp', 'produto2')"
+              onmouseleave="resetImage('img/sapato-2.webp', 'produto2')"
+            >
+              <img
+                id="produto2"
+                src="img/sapato-2.webp"
+                alt="Roberto Botticelli Sapato Social"
+              />
+            </div>
+            <div class="cardProdutoInfo">
+              <h3>Roberto Botticelli Sapato Social</h3>
+              <p>
+                Moro, Spring - Summer 2024, Made in Italy, Modelo Derby, Ponta
+                Semi Arredondada, Lace-up, Palmilha em Couro com Logo, Sola de
+                borracha, Couro, Sapatos para Homem
+              </p>
+              <p class="produtoPrice">R$ 3.673,00</p>
+
+              <button>Adicionar ao Carrinho</button>
+            </div>
+          </div>
+
+          <div class="cardProduto">
+            <div
+              class="cardProdutoImg"
+              onmouseover="changeImage('img/sapato-3-1.webp', 'produto3')"
+              onmouseleave="resetImage('img/sapato-3.webp', 'produto3')"
+            >
+              <img
+                id="produto3"
+                src="img/sapato-3.webp"
+                alt="Sapato Social Derby Brunelli"
+              />
+            </div>
+            <div class="cardProdutoInfo">
+              <h3>Sapato Social Derby Brunelli</h3>
+              <p>
+                O Brunelli é confeccionado em couro de alta qualidade, sinônimo
+                de durabilidade e refinamento. A textura luxuosa do couro
+                adiciona uma dimensão de sofisticação, garantindo que cada par
+                conte sua própria história de estilo e distinção. Cadarço
+                Premium.
+              </p>
+              <p class="produtoPrice">R$ 1.509,92</p>
+
+              <button>Adicionar ao Carrinho</button>
+            </div>
+          </div>
+
+          <div class="cardProduto">
+            <div
+              class="cardProdutoImg"
+              onmouseover="changeImage('img/sapato-4-1.webp', 'produto4')"
+              onmouseleave="resetImage('img/sapato-4.webp', 'produto4')"
+            >
+              <img
+                id="produto4"
+                src="img/sapato-4.webp"
+                alt="Sapato Rafarillo Alth"
+              />
+            </div>
+            <div class="cardProdutoInfo">
+              <h3>Sapato Social Rafarillo Alth</h3>
+              <p>
+                Calçado confeccionado em Couro, tanto no cebedal quanto no
+                forro, muito mais durabilidade. Palmilha de aumento que
+                proporciona até 7cm à mais de altura.
+              </p>
+              <p class="produtoPrice">R$ 1.419,89</p>
+
+              <button>Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2024 EBAC Fancy Shoes. Todos os direitos reservados a Eric
+        Bortoleto.
+      </p>
+    </footer>
+
+    <script>
+      function changeImage(newSrc, id) {
+        var img = document.getElementById(id);
+        setTimeout(function () {
+          img.src = newSrc;
+        }, 80);
+      }
+
+      function resetImage(originalSrc, id) {
+        var img = document.getElementById(id);
+        img.src = originalSrc;
+      }
+    </script>
+  </body>
+</html>
