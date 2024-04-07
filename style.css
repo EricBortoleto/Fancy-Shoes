@@ -62,7 +62,7 @@ nav ul li a {
 
 .sobreTexto {
   width: 100%;
-  padding: 0 50px;
+  padding: 0 0 0 50px;
 }
 
 .sobreTexto h2,
@@ -74,6 +74,7 @@ nav ul li a {
 
 .sobreTexto p {
   margin-top: 40px;
+  text-align: justify;
 }
 
 .produtos .container {
